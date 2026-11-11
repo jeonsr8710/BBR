@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="goldFrame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="45%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+
+    <radialGradient id="bgGrad" cx="50%" cy="32%" r="72%">
+      <stop offset="0%" stop-color="#e11d48" />
+      <stop offset="55%" stop-color="#881337" />
+      <stop offset="100%" stop-color="#3b150e" />
+    </radialGradient>
+
+    <linearGradient id="cardPaper" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffef9" />
+      <stop offset="100%" stop-color="#fef3c7" />
+    </linearGradient>
+
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3b8b" />
+      <stop offset="100%" stop-color="#db2777" />
+    </linearGradient>
+
+    <linearGradient id="sealGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="55%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <linearGradient id="envLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9f1239" />
+      <stop offset="100%" stop-color="#6b1029" />
+    </linearGradient>
+
+    <linearGradient id="envBottom" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#881337" />
+      <stop offset="100%" stop-color="#4c0519" />
+    </linearGradient>
+
+    <linearGradient id="biscuit" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f5cf86" />
+      <stop offset="50%" stop-color="#fde6a8" />
+      <stop offset="100%" stop-color="#d9a14a" />
+    </linearGradient>
+
+    <linearGradient id="chocoCoat" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b180c" />
+      <stop offset="45%" stop-color="#6b2e16" />
+      <stop offset="100%" stop-color="#2b1007" />
+    </linearGradient>
+
+    <linearGradient id="berryCoat" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="45%" stop-color="#fda4af" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+
+    <linearGradient id="almondCoat" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5c2812" />
+      <stop offset="50%" stop-color="#8a4220" />
+      <stop offset="100%" stop-color="#3f1909" />
+    </linearGradient>
+
+    <filter id="dropShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur" />
+      <feOffset in="blur" dx="0" dy="6" result="offsetBlur" />
+      <feComponentTransfer in="offsetBlur" result="shadow">
+        <feFuncA type="linear" slope="0.42" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="shadow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Badge -->
+  <rect x="14" y="14" width="484" height="484" rx="112" fill="url(#bgGrad)" stroke="url(#goldFrame)" stroke-width="20" />
+  <rect x="34" y="34" width="444" height="444" rx="94" fill="none" stroke="#fde047" stroke-opacity="0.38" stroke-width="3" />
+
+  <!-- Decorative Sparkles & Confetti -->
+  <circle cx="84" cy="112" r="11" fill="#fef08a" opacity="0.95" />
+  <circle cx="428" cy="112" r="11" fill="#fda4af" opacity="0.95" />
+  <circle cx="72" cy="252" r="8" fill="#ffffff" opacity="0.9" />
+  <circle cx="442" cy="242" r="9" fill="#fde047" opacity="0.92" />
+  <path d="M68 164 L73 176 L85 181 L73 186 L68 198 L63 186 L51 181 L63 176 Z" fill="#fef08a" />
+  <path d="M442 158 L447 170 L459 175 L447 180 L442 192 L437 180 L425 175 L437 170 Z" fill="#ffffff" opacity="0.95" />
+
+  <!-- Top Pill Badge: 11.11 -->
+  <g filter="url(#dropShadow)">
+    <rect x="156" y="34" width="200" height="58" rx="29" fill="url(#pillGrad)" stroke="#fef08a" stroke-width="5" />
+    <text x="256" y="74" text-anchor="middle" font-family="'Noto Sans KR', 'DejaVu Sans', Arial, sans-serif" font-size="34" font-weight="900" letter-spacing="3" fill="#ffffff">11·11</text>
+  </g>
+
+  <!-- Card Sheet Inside Envelope -->
+  <g transform="rotate(-4.5 256 260)" filter="url(#dropShadow)">
+    <rect x="108" y="106" width="296" height="278" rx="28" fill="url(#cardPaper)" stroke="#fbbf24" stroke-width="7" />
+
+    <!-- Left Stick: Strawberry Pink Pepero -->
+    <g transform="translate(178, 224) rotate(-17)">
+      <rect x="-12" y="-92" width="24" height="205" rx="12" fill="url(#biscuit)" stroke="#b45309" stroke-width="2" />
+      <rect x="-13.5" y="-94" width="27" height="145" rx="13.5" fill="url(#berryCoat)" />
+      <!-- White Chocolate Drizzle -->
+      <path d="M-12 -74 Q0 -66 12 -74 M-12 -50 Q0 -42 12 -50 M-12 -26 Q0 -18 12 -26 M-12 -2 Q0 6 12 -2 M-12 22 Q0 30 12 22" fill="none" stroke="#fff7ed" stroke-width="4.5" stroke-linecap="round" />
+      <ellipse cx="-5" cy="-42" rx="2.5" ry="44" fill="#ffffff" opacity="0.28" />
+    </g>
+
+    <!-- Right Stick: Almond Crunch Pepero -->
+    <g transform="translate(334, 224) rotate(17)">
+      <rect x="-12" y="-92" width="24" height="205" rx="12" fill="url(#biscuit)" stroke="#b45309" stroke-width="2" />
+      <rect x="-13.5" y="-94" width="27" height="145" rx="13.5" fill="url(#almondCoat)" />
+      <!-- Almond Pieces -->
+      <circle cx="-5" cy="-70" r="4.5" fill="#fde68a" />
+      <circle cx="6" cy="-54" r="4.2" fill="#fed7aa" />
+      <circle cx="-4" cy="-35" r="4.8" fill="#fef3c7" />
+      <circle cx="5" cy="-16" r="4.5" fill="#fde68a" />
+      <circle cx="-6" cy="4" r="4.2" fill="#fed7aa" />
+      <circle cx="4" cy="24" r="4.8" fill="#fef3c7" />
+      <circle cx="-3" cy="39" r="3.8" fill="#fde68a" />
+      <ellipse cx="-6" cy="-40" rx="2.5" ry="42" fill="#ffffff" opacity="0.18" />
+    </g>
+
+    <!-- Center Tall Stick: Classic Dark Choco Pepero -->
+    <g transform="translate(256, 212)">
+      <rect x="-14" y="-98" width="28" height="218" rx="14" fill="url(#biscuit)" stroke="#b45309" stroke-width="2.2" />
+      <rect x="-15.5" y="-100" width="31" height="156" rx="15" fill="url(#chocoCoat)" />
+      <!-- Colorful Sprinkles -->
+      <rect x="-8" y="-82" width="9" height="4" rx="2" transform="rotate(28 -3 -80)" fill="#fb7185" />
+      <rect x="1" y="-64" width="9" height="4" rx="2" transform="rotate(-24 5 -62)" fill="#fde047" />
+      <rect x="-9" y="-42" width="9" height="4" rx="2" transform="rotate(-18 -5 -40)" fill="#38bdf8" />
+      <rect x="2" y="-22" width="9" height="4" rx="2" transform="rotate(32 6 -20)" fill="#f472b6" />
+      <rect x="-7" y="0" width="9" height="4" rx="2" transform="rotate(16 -2 2)" fill="#fde047" />
+      <rect x="1" y="20" width="9" height="4" rx="2" transform="rotate(-30 5 22)" fill="#4ade80" />
+      <ellipse cx="-7" cy="-42" rx="3" ry="46" fill="#ffffff" opacity="0.2" />
+    </g>
+
+    <!-- Bright Pink Ribbon Bow Binding the Sticks -->
+    <g transform="translate(256, 294)">
+      <path d="M-4 0 C-28 -22 -48 -14 -42 6 C-36 22 -14 14 -4 4 Z" fill="#f43f5e" stroke="#be123c" stroke-width="2.5" />
+      <path d="M4 0 C28 -22 48 -14 42 6 C36 22 14 14 4 4 Z" fill="#f43f5e" stroke="#be123c" stroke-width="2.5" />
+      <circle cx="0" cy="2" r="9" fill="#fb7185" stroke="#be123c" stroke-width="2.5" />
+    </g>
+  </g>
+
+  <!-- Envelope Pocket Front -->
+  <g filter="url(#dropShadow)">
+    <!-- Back shadow fold / Side Flaps -->
+    <path d="M88 288 L256 382 L424 288 L424 416 Q424 446 394 446 L118 446 Q88 446 88 416 Z" fill="url(#envLeft)" stroke="#fbbf24" stroke-width="5.5" stroke-linejoin="round" />
+    <!-- Bottom Triangle Flap -->
+    <path d="M92 436 L256 346 L420 436 Q412 446 394 446 L118 446 Q100 446 92 436 Z" fill="url(#envBottom)" stroke="#f59e0b" stroke-opacity="0.7" stroke-width="3" stroke-linejoin="round" />
+  </g>
+
+  <!-- Golden Heart Seal -->
+  <g transform="translate(256, 376)" filter="url(#dropShadow)">
+    <circle cx="0" cy="0" r="38" fill="url(#sealGold)" stroke="#ffffff" stroke-width="6" />
+    <!-- Crisp Heart -->
+    <path d="M0 17 C-3 14 -19 3 -19 -8 C-19 -16 -12 -21 -5 -21 C-1 -21 0 -17 0 -17 C0 -17 1 -21 5 -21 C12 -21 19 -16 19 -8 C19 3 3 14 0 17 Z" fill="#be123c" />
+  </g>
+</svg>
