@@ -51,6 +51,8 @@ describe("pepero share helpers", () => {
 
     assert.equal(payload.objectType, "feed");
     assert.match(payload.content.title, /달콤한 11월 11일/);
+    assert.equal(payload.content.imageWidth, 1200);
+    assert.equal(payload.content.imageHeight, 600);
     assert.equal(payload.buttons[0].title, "온라인카드 열어보기");
   });
 });
